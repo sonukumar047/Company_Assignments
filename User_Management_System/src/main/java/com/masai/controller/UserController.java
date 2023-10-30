@@ -13,7 +13,6 @@ import com.masai.service.UserService;
 //import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/users")
 public class UserController {
 
 	@Autowired
