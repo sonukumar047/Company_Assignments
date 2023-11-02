@@ -26,9 +26,10 @@ public class ProfileSerImpl implements ProfileService{
 				ownerUrl+username,
 				Profile.class
 				);
+		Profile profile = restTemplate.getForObject(ownerUrl+username, Profile.class);
 		
-		Profile owner = responseEntity.getBody();
-		return owner;
+//		Profile owner = responseEntity.getBody();
+		return profile;
 	}
 
 	@Override
