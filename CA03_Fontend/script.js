@@ -1,14 +1,3 @@
-// const express = require('express');
-// const app = express();
-
-// // Handle favicon.ico request
-// app.get('/favicon.ico', (req, res) => res.status(204));
-
-// // Other routes and middleware...
-
-// app.listen(3000, () => {
-//   console.log('Server is running on port 3000');
-// });
 
 
 function addCar() {

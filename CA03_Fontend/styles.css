@@ -6,6 +6,8 @@ body {
 }
 
 .container {
+    display: grid(3, 1fr);
+    
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
@@ -13,6 +15,10 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* .container div{
+
+} */
 
 h1, h2 {
     color: #333;
@@ -58,5 +64,39 @@ ul {
 
 li {
     margin-bottom: 5px;
-    color: #333;
+    color: #efe6e6;
 }
+
+
+.navbar {
+    background-color: #eadfdf;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    margin: 0;
+    color: rgb(54, 30, 30);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #2c2323;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
