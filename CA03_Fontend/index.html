@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+    <title>Parking Slot Management System</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Parking Slot Management System</h1>
+
+        <div>
+            <h2>Add Car</h2>
+            <label for="carNumber">Car Number:</label>
+            <input type="text" id="carNumber">
+            <button onclick="addCar()">Add Car</button>
+        </div>
+
+        <div>
+            <h2>Get Car By ID</h2>
+            <label for="carId">Car ID:</label>
+            <input type="text" id="carId">
+            <button onclick="getCarById()">Get Car</button>
+            <p id="carByIdResult"></p>
+        </div>
+
+        <div>
+            <h2>Get Car By Number</h2>
+            <label for="carNumberInput">Car Number:</label>
+            <input type="text" id="carNumberInput">
+            <button onclick="getCarByNumber()">Get Car</button>
+            <p id="carByNumberResult"></p>
+        </div>
+
+        <div>
+            <h2>Get All Cars</h2>
+            <button onclick="getAllCars()">Get All Cars</button>
+            <ul id="allCarsList"></ul>
+        </div>
+
+        <div>
+            <h2>Park Car</h2>
+            <label for="parkCarNumber">Car Number:</label>
+            <input type="text" id="parkCarNumber">
+            <button onclick="parkCar()">Park Car</button>
+        </div>
+
+        <div>
+            <h2>Get Parking Details By Slot ID</h2>
+            <label for="slotId">Slot ID:</label>
+            <input type="text" id="slotId">
+            <button onclick="getParkingDetailsBySlotId()">Get Parking Details</button>
+            <p id="parkingDetailsResult"></p>
+        </div>
+
+        <div>
+            <h2>Get All Parking Slots</h2>
+            <button onclick="getAllParkingSlots()">Get All Parking Slots</button>
+            <ul id="parkingSlotsList"></ul>
+        </div>
+
+        <div>
+            <h2>Unpark Car</h2>
+            <label for="unparkSlotId">Slot ID:</label>
+            <input type="text" id="unparkSlotId">
+            <button onclick="unparkCar()">Unpark Car</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

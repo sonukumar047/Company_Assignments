@@ -6,6 +6,6 @@ import com.masai.model.ParkingSlot;
 
 public interface ParkingSlotRepository extends JpaRepository<ParkingSlot, Integer> {
 
-	ParkingSlot findBySlotNumber(String slotNumber);
+//	ParkingSlot findBySlotNumber(String slotNumber);
 //	ParkingSlot findByCarNumber(String carNumber);
 }

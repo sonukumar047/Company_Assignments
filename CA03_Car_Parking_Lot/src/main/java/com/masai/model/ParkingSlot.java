@@ -19,10 +19,8 @@ public class ParkingSlot {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int slotId;
-	private String slotNumber;
 	private LocalDateTime parkingTime = LocalDateTime.now();
 	
-	@Embedded
 	@OneToOne
 	@JoinColumn(name = "carId")
 	private Car car;

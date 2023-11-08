@@ -13,7 +13,6 @@ import lombok.Data;
 
 @Entity
 @Data
-@Embeddable
 public class Car {
 
 	@Id
