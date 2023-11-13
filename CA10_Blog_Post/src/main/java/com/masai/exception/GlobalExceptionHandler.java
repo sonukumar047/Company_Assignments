@@ -33,4 +33,16 @@ public class GlobalExceptionHandler {
 						), HttpStatus.BAD_REQUEST
 				);
 	}
+	
+
+	@ExceptionHandler(UserNotFoundException.class)
+	ResponseEntity<ExceptionDefination> userNotFound(UserNotFoundException ex, WebRequest wb){
+		return new ResponseEntity<ExceptionDefination>(
+				new ExceptionDefination(
+						LocalDateTime.now(),
+						ex.getMessage(),
+						wb.getDescription(false)
+						), HttpStatus.BAD_REQUEST
+				);
+	}
 }

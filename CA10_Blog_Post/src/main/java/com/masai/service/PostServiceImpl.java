@@ -79,7 +79,6 @@ public class PostServiceImpl implements PostService {
 	                String modifiedWord = word.substring(0, word.length() - 3) + "***";
 	                matcher.appendReplacement(modifiedBody, modifiedWord);
 	            } else {
-	                // Log the information for debugging
 	                System.out.println("Skipped modification for word: " + word + " (Length: " + word.length() + ")");
 	            }
 	        }

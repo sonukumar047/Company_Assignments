@@ -46,8 +46,17 @@ public class SecurityConfiguration {
 			.authorizeHttpRequests(auth->{
 				auth
 				  .requestMatchers(HttpMethod.POST, "/users/register").permitAll()
-//				  .requestMatchers(HttpMethod.GET, "/users/getAllUsers").permitAll()
 				  .requestMatchers(HttpMethod.POST, "/users/login").permitAll()
+//				  .requestMatchers(HttpMethod.GET, "/users/getAllUsers").hasAnyRole("ADMIN","USER")
+				  .requestMatchers(HttpMethod.GET, "/users/getAllUsers").permitAll()
+				  .requestMatchers(HttpMethod.GET, "/users/getUserByEmail/{email}").permitAll()
+//				  .requestMatchers(HttpMethod.DELETE, "/users/deleteUserById/{userId}").hasAnyRole("ADMIN")
+				  .requestMatchers(HttpMethod.DELETE, "/users/deleteUserById/{userId}").permitAll()
+				  .requestMatchers(HttpMethod.POST, "/post/addPost").permitAll()
+				  .requestMatchers(HttpMethod.GET, "/post/getPostById/{postId}").permitAll()
+				  .requestMatchers(HttpMethod.GET, "/post/getAllPost").permitAll()
+				  .requestMatchers(HttpMethod.DELETE, "/post/deletePostById/{postId}").permitAll()
+				  .requestMatchers(HttpMethod.POST, "/post/modifyPost/{postId}").permitAll()
 				  .requestMatchers("/swagger-ui*/**","/v3/api-docs/**").permitAll()
 				       .anyRequest()
 				       .authenticated();
