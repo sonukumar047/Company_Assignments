@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and AI Prompt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Cursive+Font" />
+</head>
+<body>
+
+    <header class="header">
+        <h1>SpringAI Bot</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="ai-prompt">
+            <h2>AI Prompt</h2>
+            <button  onclick="testAiPrompt()">Test AI Prompt</button>
+            <button  onclick="getJoke()">Topic</button>
+            <button  onclick="getTopLanguage()">Get Top Language</button>
+            <div id="aiResponse"></div>
+        </section>
+
+        <hr>
+
+        <section class="feedback">
+            <h2>Feedback</h2>
+            <button onclick="addFeedback()">Provide Feedback</button>
+            <button onclick="getAllFeedback()">Get All Feedback</button>
+            <button onclick="deleteFeedback()">Delete Feedback</button>
+            <button onclick="updateFeedback()">Update Feedback</button>
+            <div id="feedbackResponse"></div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Sonu AI Servies</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
